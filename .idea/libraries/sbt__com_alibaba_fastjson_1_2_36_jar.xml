@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sbt: com.alibaba:fastjson:1.2.36:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/alibaba/fastjson/1.2.36/fastjson-1.2.36.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/alibaba/fastjson/1.2.36/fastjson-1.2.36-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/alibaba/fastjson/1.2.36/fastjson-1.2.36-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

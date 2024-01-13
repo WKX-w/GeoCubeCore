@@ -1,0 +1,8 @@
+{
+  "process": "http://oge.whu.edu.cn/ogcpai/processes_api/processes/normalize",
+  "inputs": {
+    "data": "s",
+    "dimensionName": "bands",
+    "dimensionMembers": ["B8", "B3"]
+  }
+}

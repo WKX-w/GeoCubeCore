@@ -1,0 +1,29 @@
+{
+    "process": "http://oge.whu.edu.cn/ogcpai/processes_api/processes/aggregate",
+    "inputs": {
+        "dimensionName": "time",
+        "data": {
+            "process": "http://oge.whu.edu.cn/ogcpai/processes_api/processes/normalize",
+            "inputs": {
+                "data": {
+                    "process": "http://oge.whu.edu.cn/ogcpai/processes_api/processes/loadCube",
+                    "inputs": {
+                        "cubeName": "ECMWF_ht3e",
+                        "bbox": [
+                            51.9,
+                            7,
+                            52,
+                            7.1
+                        ]
+                    }
+                },
+                "dimensionName": "band",
+                "dimensionMembers": [
+                    "B4",
+                    "B3"
+                ]
+            }
+        },
+        "method": "max"
+    }
+}

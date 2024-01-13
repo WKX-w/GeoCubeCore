@@ -1,0 +1,16 @@
+{
+  "process": "http://oge.whu.edu.cn/ogcpai/processes_api/processes/normalize",
+  "inputs": {
+    "data": {
+      "process": "http://oge.whu.edu.cn/ogcpai/processes_api/processes/loadCube",
+      "inputs": {
+        "cubeName": "SENTINEL-2 Level-2A MSI",
+        "extent": "4.42,51.63,4.8,51.84",
+        "startTime": "2019-01-18 20:59:59",
+        "endTime": "2019-01-19 21:00:01"
+      }
+    },
+    "dimensionName": "bands",
+    "dimensionMembers": ["B8", "B3"]
+  }
+}

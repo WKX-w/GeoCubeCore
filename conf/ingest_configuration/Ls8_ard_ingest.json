@@ -1,0 +1,61 @@
+{
+  "source_type" : "ls5_ledaps_scene",
+  "output_type" : "ls5_ledaps_albers",
+  "description" : "Landsat 5 LEDAPS 25 metre, 100km tile, Australian Albers Equal Area projection (EPSG:3577)",
+  "location" : "/media/simonaoliver/datacube/tiles",
+  "file_path_template" : "LS5_TM_LEDAPS/LS5_TM_LEDAPS_3577_{tile_index[0]}_{tile_index[1]}_{start_time}.nc",
+  "global_attributes" : {
+    "title" : "CEOS Data Cube Landsat Surface Reflectance",
+    "summary" : "Landsat 5 Thematic Mapper Analysis Ready data prepared by NASA on behalf of CEOS.",
+    "source" : "Surface reflectance from LEDAPS",
+    "institution" : "CEOS",
+    "instrument" : "TM",
+    "keywords" : "AU/GA",
+    "keywords_vocabulary" : "GCMD",
+    "platform" : "LANDSAT-5",
+    "processing_level" : "L2",
+    "product_version" : "2.0.0",
+    "product_suite" : "USGS Landsat",
+    "license" : "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "storage" : {
+    "driver" : "GeoTIFF",
+    "crs" : "EPSG:3577",
+    "tile_size" : {
+      "x" : 100000.0,
+      "y" : 100000.0
+    },
+    "resolution" : {
+      "x" : 25.0,
+      "y" : -25.0
+    },
+    "chunking" : {
+      "x" : 200.0,
+      "y" : 200.0,
+      "time" : 1.0
+    },
+    "dimension_order" : "['time', 'y', 'x']"
+  },
+  "measurements_blue" : {
+    "name" : "blue",
+    "dtype" : "Float32",
+    "nodata" : "Float.NaN",
+    "resampling_method" : "nearest",
+    "src_varname" : "blue",
+    "attrs" : {
+      "long_name" : "Surface Reflectance 0.45-0.52 microns (Blue)",
+      "alias" : "band_1"
+    }
+  },
+  "measurements_green" : {
+    "name" : "green",
+    "dtype" : "Float32",
+    "nodata" : "Float.NaN",
+    "resampling_method" : "nearest",
+    "src_varname" : "green",
+    "attrs" : {
+      "long_name" : "Surface Reflectance 0.52-0.60 microns (Green)",
+      "alias" : "band_2"
+    }
+  }
+}
